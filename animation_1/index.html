@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+    <style>
+        .c_bat {
+            border: 2px solid rgba(0, 0, 0, 0.39);
+            margin-top: 40PX;
+            background-color: rgba(0, 0, 0, 0.39);
+        }
+        
+        .bat {
+            transition: transform 0.3s;
+        }
+        
+        .c_bat:hover img {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        
+        .ball {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: red;
+            position: relative;
+            left: 100px;
+            bottom: 50px;
+        }
+        
+        .ball {
+            transition: transform 1s;
+        }
+        
+        .c_bat:hover .ball {
+            transform: translate(1200px, -250px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c_bat">
+        <img class="bat" src="bat.png" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
